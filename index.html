@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – [Your Name]</title>
+  <style>
+    :root {
+      --bg: #1e1e2f;
+      --text: #f0f0f0;
+      --primary: #282c34;
+      --accent: #ff3366;
+      --card-bg: #2c2f4a;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(135deg, #ff3366, #3f51b5);
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      background-color: var(--primary);
+      padding: 1rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    .project {
+      margin-bottom: 2rem;
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .project a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--primary);
+      color: #fff;
+      margin-top: 2rem;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--accent);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ignacio Valentin Casaletti</h1>
+    <p>Game Designer & Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#documents">Documents</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a dedicated and passionate Software Engineering student currently in my fourth year of study. With an intermediate Systems Analyst diploma and a specialized certification in Video Game Design and Production, I combine strong analytical skills with creative game development expertise.<br><br>
+      My background allows me to design immersive, balanced, and user-focused gaming experiences, while applying solid software engineering principles. I am eager to grow professionally in the game design and development industry, contributing innovative ideas and technical proficiency to dynamic projects.
+    </p>
+
+  </section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>BabySetter – Child Monitoring App</h3>
+    <p>This application was developed as my final project for the Systems Analyst degree. BabySetter is a mobile app focused on child safety and parent supervision, offering real-time notifications, secure login, and activity tracking. I led the development, UX design, and final presentation.</p>
+    <p><strong>Tools:</strong> Java, SQLite, Android Studio, XML</p>
+    <a href="https://docs.google.com/document/d/1_8eJVoUlUgoB6g67sxpILADXqgUx8cUP/edit?usp=sharing&ouid=107878860236676354000&rtpof=true&sd=true">Project Report (PDF)</a>
+  </div>
+
+  <div class="project">
+    <h3>Micromancer – Game Jam Project</h3>
+    <p>A 16 bits Minigame inspired by "the legend of zelda: minish cap" created in just 10 days during a Game Jam. I was responsible for the core gameplay mechanics, Level design, game design document, and level progression.
+    <p><strong>Tools:</strong> Unity, Tiled</p>
+    <a href="https://terabyte-worlds.itch.io/micromancer">Itchio page</a>
+    <a href="https://docs.google.com/document/d/13sMzXtu_8Mhqgw_m9AjrpP2XFIo568FrIi1gIt36FG8/edit?usp=sharing">Game Design Document </a>
+    
+
+  </section>
+<section id="documents">
+  <h2>Documents</h2>
+    <div>
+    <h3>Curriculum Vitae</h3>
+    <img src="CV.jpg" alt="Curriculum Vitae"
+         style="max-width: 300px; width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;"
+         onclick="openLightbox(this.src)" />
+  </div>
+  <div>
+    <h3>Video Game Design and Production Certificate</h3>
+    <img src="certificate.jpg" alt="Video Game Design and Production Certificate"
+         style="max-width: 300px; width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;"
+         onclick="openLightbox(this.src)" />
+  </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" style="display:none; position:fixed; z-index:1000; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); align-items:center; justify-content:center;">
+  <img id="lightbox-img" src="" style="max-width:90vw; max-height:90vh; border-radius: 10px;" />
+</div>
+
+<script>
+  function openLightbox(src) {
+    const lightbox = document.getElementById("lightbox");
+    const img = document.getElementById("lightbox-img");
+    img.src = src;
+    lightbox.style.display = "flex";
+  }
+
+  document.getElementById("lightbox").onclick = function () {
+    this.style.display = "none";
+  };
+</script>
+
+
+  <footer>
+  <section style="text-align: left;" id="contact">
+    <h2>Contact</h2>
+    <p>Email: Casaletti0310@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/ignacio-casaletti-0b1921246/">Ignacio Casaletti</a></p>
+    <p>Itch.io: <a href="https://karma0310.itch.io">My itchio page</a></p>
+  </section>
+    <p>&copy; 2025 Ignacio Casaletti. All rights reserved.</p>
+  </footer>
+
+  <div class="back-to-top" id="backToTop">↑ Top</div>
+
+  <script>
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    backToTop.onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
