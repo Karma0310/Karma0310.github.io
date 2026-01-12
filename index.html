@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio – Ignacio Casaletti</title>
-
+  <title>Ignacio Casaletti – Game Designer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -12,116 +11,152 @@
 
 <header>
   <h1>Ignacio Valentin Casaletti</h1>
-  <p>Game Designer & Developer</p>
+  <p>Game Designer · Level Designer · UX-Focused Developer</p>
 </header>
 
 <nav>
   <a href="#about">About</a>
+  <a href="#skills">What I Do</a>
   <a href="#projects">Projects</a>
   <a href="#environment">Environments</a>
-  <a href="#documents">Documents</a>  
+  <a href="#documents">Documents</a>
   <a href="#contact">Contact</a>
-
 </nav>
 
 <section id="about">
   <h2>About Me</h2>
   <p>
-I am a dedicated and passionate Software Engineering student currently in my fourth year of study. With an intermediate Systems Analyst diploma and a specialized certification in Video Game Design and Production, I combine strong analytical skills with creative game development expertise.<br><br> My background allows me to design immersive, balanced, and user-focused gaming experiences, while applying solid software engineering principles. I am eager to grow professionally in the game design and development industry, contributing innovative ideas and technical proficiency to dynamic projects.
+    Software Engineering student (4th year) with an intermediate Systems Analyst degree
+    and a certification in Video Game Design & Production.
+    <br><br>
+    I focus on gameplay systems, level design and UX-driven decisions.
+    I work comfortably with prototypes, constraints and iteration cycles,
+    always aiming to create clear, readable and engaging player experiences.
   </p>
+</section>
+
+<section id="skills">
+  <h2>What I Can Do for Your Project</h2>
+
+  <ul class="skills-list">
+    <li>Design and balance gameplay mechanics</li>
+    <li>Create readable, engaging and scalable level designs</li>
+    <li>Analyze player flow, friction points and UX issues</li>
+    <li>Prototype mechanics quickly in Unity or Unreal</li>
+    <li>Write clear design documentation (GDD, feature specs)</li>
+    <li>Provide actionable feedback and design iteration</li>
+  </ul>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="project">
-    <h3>BabySetter – Child Monitoring App</h3>
-    <p class="project-desc">
-      Mobile application focused on child safety, real-time notifications and activity tracking.
-      I worked on development, UX and presentation.
-    </p>
-    <p><strong>Tools:</strong> Java, SQLite, Android Studio</p>
-
-    <div class="project-links">
-      <a href="https://docs.google.com/document/d/1_8eJVoUlUgoB6g67sxpILADXqgUx8cUP/edit?usp=sharing&ouid=107878860236676354000&rtpof=true&sd=true">Project Report</a>
-    </div>
-  </div>
-
-  <div class="project">
+  <div class="card">
     <h3>Micromancer – Game Jam Project</h3>
-    <p class="project-desc">
-      16-bit game inspired by Minish Cap, developed in 10 days.
-      Responsible for gameplay mechanics and level design.
-    </p>
-    <p><strong>Tools:</strong> Unity, Tiled</p>
 
-    <div class="project-gallery">
+    <div class="video-placeholder">
+      Gameplay video coming soon
+    </div>
+
+    <p class="desc">
+      16-bit inspired action-adventure developed in 10 days.
+      I was responsible for gameplay mechanics and level design.
+    </p>
+
+    <div class="design-block">
+      <p><strong>Problem:</strong> Limited development time and small team size.</p>
+      <p><strong>Design Decision:</strong> Focus on simple mechanics with high player feedback and readable level layouts.</p>
+      <p><strong>Result:</strong> Playable and polished prototype delivered on time with positive player feedback.</p>
+    </div>
+
+    <p class="tools">Unity · Tiled · Rapid Prototyping</p>
+
+    <div class="gallery">
       <img src="Images/micromancer_1.png" data-lightbox>
       <img src="Images/micromancer_2.png" data-lightbox>
       <img src="Images/micromancer_3.png" data-lightbox>
     </div>
 
-    <div class="project-links">
-      <a href="https://terabyte-worlds.itch.io/micromancer">Itch.io</a>
-      <a href="https://docs.google.com/document/d/13sMzXtu_8Mhqgw_m9AjrpP2XFIo568FrIi1gIt36FG8/edit?usp=sharing">GDD</a>
+    <div class="links-row">
+      <a class="link" href="https://terabyte-worlds.itch.io/micromancer" target="_blank">Itch.io</a>
+      <a class="link" href="https://docs.google.com/document/d/13sMzXtu_8Mhqgw_m9AjrpP2XFIo568FrIi1gIt36FG8/edit" target="_blank">GDD</a>
     </div>
   </div>
-</section>
-<section id="environment">
-    <h2>Environments</h2>
 
-  <div class="environment">
+  <div class="card">
+    <h3>BabySetter – Mobile Application</h3>
+
+    <p class="desc">
+      Child monitoring mobile app focused on safety, notifications and usability.
+      I worked on development, UX decisions and system flow.
+    </p>
+
+    <div class="design-block">
+      <p><strong>Problem:</strong> Complex information needed to be accessible under stress situations.</p>
+      <p><strong>Design Decision:</strong> Prioritize clarity, alerts hierarchy and minimal interaction steps.</p>
+      <p><strong>Result:</strong> Clean interface with fast access to critical information.</p>
+    </div>
+
+    <p class="tools">Java · SQLite · Android Studio</p>
+
+    <a class="link" href="https://docs.google.com/document/d/1_8eJVoUlUgoB6g67sxpILADXqgUx8cUP/edit" target="_blank">
+      View Project Report
+    </a>
+  </div>
+</section>
+
+<section id="environment">
+  <h2>Environment Art & Level Spaces</h2>
+
+  <div class="card">
     <h3>City Building</h3>
-    <p><strong>Tools:</strong> Unreal Engine 5</p>
-    <div class="environment-gallery">
+    <p class="tools">Unreal Engine 5</p>
+    <div class="gallery">
       <img src="Images/CityBuild_1.png" data-lightbox>
       <img src="Images/CityBuild_2.png" data-lightbox>
       <img src="Images/CityBuild_3.png" data-lightbox>
     </div>
   </div>
 
-  <div class="environment">
+  <div class="card">
     <h3>Snow Mountain</h3>
-    <p><strong>Tools:</strong> Unreal Engine 5</p>
-    <div class="environment-gallery">
+    <p class="tools">Unreal Engine 5</p>
+    <div class="gallery">
       <img src="Images/SnowMountain_1.png" data-lightbox>
       <img src="Images/SnowMountain_2.png" data-lightbox>
       <img src="Images/SnowMountain_3.png" data-lightbox>
       <img src="Images/SnowMountain_4.png" data-lightbox>
     </div>
-   </div>
+  </div>
 </section>
+
 <section id="documents">
   <h2>Documents</h2>
 
   <div class="documents-grid">
-    <div class="document-card" data-doc="CV.jpg">
-      <div class="doc-icon">📄</div>
+    <div class="document-card" data-doc="Images/CV.jpg">
+      <span class="doc-icon">📄</span>
       <h3>Curriculum Vitae</h3>
-      <p>Updated resume focused on game design and UX.</p>
-      <span class="doc-action">Click to view</span>
+      <p>Game Design & UX Focused</p>
     </div>
 
-    <div class="document-card" data-doc="certificate.jpg">
-      <div class="doc-icon">🎮</div>
-      <h3>Game Design & Production Certificate</h3>
-      <p>Official certification in video game design and production.</p>
-      <span class="doc-action">Click to view</span>
+    <div class="document-card" data-doc="Images/certificate.jpg">
+      <span class="doc-icon">🎮</span>
+      <h3>Game Design Certificate</h3>
+      <p>Design & Production</p>
     </div>
   </div>
 </section>
 
 <footer id="contact">
   <h2>Contact</h2>
-  <p>Email: Casaletti0310@gmail.com</p>
-  <p>LinkedIn: <a href="#">Ignacio Casaletti</a></p>
-  <p>Itch.io: <a href="#">karma0310</a></p>
-  <p class="copyright">© 2025 Ignacio Casaletti</p>
+  <p>Email: casaletti0310@gmail.com</p>
+  <p>Itch.io: karma0310</p>
+  <p>LinkedIn: Ignacio Casaletti</p>
 </footer>
 
-<div class="back-to-top" id="backToTop">↑ Top</div>
+<div id="backToTop">↑</div>
 
-<!-- Lightbox -->
 <div id="lightbox">
   <img id="lightbox-img">
 </div>
@@ -129,4 +164,3 @@ I am a dedicated and passionate Software Engineering student currently in my fou
 <script src="script.js"></script>
 </body>
 </html>
-
