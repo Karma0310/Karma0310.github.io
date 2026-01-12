@@ -1,0 +1,124 @@
+:root {
+  --bg: #1e1e2f;
+  --text: #f0f0f0;
+  --primary: #282c34;
+  --accent: #ff3366;
+  --card-bg: #2c2f4a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: linear-gradient(135deg, #ff3366, #3f51b5);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+nav {
+  background: var(--primary);
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+h2 {
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+.project {
+  background: linear-gradient(145deg, #2c2f4a, #23263d);
+  padding: 2rem;
+  border-radius: 14px;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(255, 51, 102, 0.35);
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.document-card {
+  background: linear-gradient(145deg, #2c2f4a, #23263d);
+  padding: 2rem;
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid rgba(255, 51, 102, 0.35);
+}
+
+.doc-icon {
+  font-size: 3rem;
+}
+
+footer {
+  background: var(--primary);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--accent);
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 10px;
+}
